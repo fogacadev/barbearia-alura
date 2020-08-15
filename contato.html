@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-home.css">
 </head>
 <body>
@@ -36,8 +35,8 @@
             <label for="mensagem">Mensagem</label>
             <textarea class="input-padrao" name="" id="mensagem"></textarea>
 
-            <div>
-                <p>Como prefere nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
                 <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>
                 
     
@@ -46,19 +45,22 @@
     
                 <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" value="whatsapp">Whatsapp</label>
                 
-            </div>
+            </fieldset>
            
-            <p>Qual horário prefere ser atendido?</p>
-            <select>
-                <option value="Manhã">Manhã</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noite">Noite</option>
-            </select>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </fieldset>
+            
 
             <label> <input type="checkbox" class="checkbox" > Gostária de receber nossa novidades por e-mail?</label>
 
 
-            <input type="submit" value="Enviar formuário">
+            <input type="submit" value="Enviar formuário" class="enviar">
         </form>
     </main>
 

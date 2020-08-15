@@ -17,7 +17,7 @@ nav{
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     margin: 0 0 0 15px;
 }
 nav a {
@@ -92,4 +92,50 @@ footer .copyright{
     color: #ffffff;
     font-size: 13px;
     margin: 20px 0 0 ;
+}
+
+form{
+	margin: 40px 0;
+}
+
+form label, form legend{
+	font-size: 20px;
+	margin: 0 0 10px;
+	display: block;
+	text-align: left;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+}
+
+.enviar{
+	width: 50%;
+	padding: 15px 0;
+	background: orange;
+	box-sizing: border-box;
+	margin: 5px 0;
+	color: white;
+	font-weight: bold;
+	font-size:18px;
+	border: none;
+	border-radius: 5px;
+	transition: background 0.2s;
+}
+
+.enviar:hover{
+	background: darkorange;
+}
+
+
+main{
+	width: 940px;
+	margin: 0 auto;
 }
